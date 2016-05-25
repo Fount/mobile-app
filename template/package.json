@@ -1,8 +1,10 @@
 {
-  "name": "webpack_app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  {{#private}}
+  "private": true,
+  {{/private}}
   "scripts": {
     "start": "webpack-dev-server --hot --inline --config ./build/webpack.dev.config.js",
     "build": "webpack --progress --profile --colors --config ./build/webpack.production.config.js",
