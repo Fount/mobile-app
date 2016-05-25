@@ -1,0 +1,24 @@
+@import "color";
+.toolbar-con{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  a{
+    display: block;
+    background-color: @uColor;
+    color: #fff;
+    padding: 0.5rem;
+    flex:1;
+    text-align: center;
+    &.active{
+      background-color: @mainColor;
+    }
+  }
+  &.toolbar-enter,&.toolbar-leave{
+    transform:translateY(100%);
+  }
+  &.toolbar-transition{
+    transition: transform 0.5s ease;
+  }
+}
