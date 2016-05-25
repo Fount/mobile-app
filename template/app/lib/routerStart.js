@@ -5,7 +5,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import {routeList,start} from '../router'
 import {getPage} from './session'
+{{#if_eq weixinShare true}}
 import {default as weixinShare} from './weixinShare'
+{{/if_eq}}
 Vue.use(Router);
 var router=new Router();
 
@@ -20,11 +22,13 @@ var changeTitleAndWeixinShare=(data)=>{
             }, 0)
         }).appendTo($body);
     }
+    {{#if_eq weixinShare true}}
     weixinShare({
         title:data.page_title_fx,
         desc:data.desc,
         img:data.img
     });
+    {{/if_eq}}
 };
 
 var routMap=(()=>{

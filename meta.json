@@ -30,5 +30,8 @@
       "default":true
     }
   },
-  "filters":{}
+  "filters":{
+    "app/lib/weixinShare.js":"weixinShare",
+    "app/lib/toolbar.js":"toolbar"
+  }
 }

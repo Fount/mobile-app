@@ -9,7 +9,9 @@ import scrollControl from './scrollControl'
 import {getTicket,default as weixinShare} from './weixinShare'
 {{/if_eq}}
 import alert from './alert'
+{{#if_eq toolbar true}}
 import  './toolbar'
+{{/if_eq}}
 export default {
     install(Vue,options){
         options=Object.assign({
@@ -37,10 +39,11 @@ export default {
         //加载过滤器
         filter(Vue);
 
+        {{#if_eq weixinShare true}}
         //加载分享
         getTicket();
         Vue.prototype.$share=weixinShare;
-
+        {{/if_eq}}
         //加载弹框组件
         Vue.prototype.$alert=alert;
 
