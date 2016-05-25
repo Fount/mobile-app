@@ -18,6 +18,16 @@
     "private": {
       "type": "boolean",
       "default": true
+    },
+    "weixinShare":{
+      "type":"boolean",
+      "label":"do you need weixin share",
+      "default":true
+    },
+    "toolbar":{
+      "type":"boolean",
+      "label":"do you need toolbar",
+      "default":true
     }
   },
   "filters":{}

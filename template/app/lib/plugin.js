@@ -5,7 +5,9 @@ import routerStart from './routerStart'
 import FastClick from 'fastclick'
 import filter from './filter'
 import scrollControl from './scrollControl'
+{{#if_eq weixinShare true}}
 import {getTicket,default as weixinShare} from './weixinShare'
+{{/if_eq}}
 import alert from './alert'
 import  './toolbar'
 export default {
