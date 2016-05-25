@@ -19,5 +19,8 @@
       "type": "boolean",
       "default": true
     }
+  },
+  "filters":{
+    "app/lib/toolbar.js":"false"
   }
 }
