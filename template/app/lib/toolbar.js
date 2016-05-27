@@ -10,7 +10,7 @@ var $el=$('<div id="toolbar-con" class="toolbar-con"></div>');
 $('body').append($el);
 
 var Toolbar = Vue.extend({
-    template: `<div v-show="store.show" transition="toolbar"><a v-for="item in list" @click="goto(item.name)" :class="{'active':store.active==item.name}"><span><%item.text%></span></a></div>`,
+    template: `<div v-show="store.show" transition="toolbar"><a v-for="item in list" @click="goto(item.name)" :class="{'active':store.active==item.name}"><span>\{{item.text}}</span></a></div>`,
     methods:{
         goto(name){
             router.go({name});

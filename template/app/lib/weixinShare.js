@@ -63,7 +63,7 @@ export const getTicket=function(apiURL){
             },
             type:'get',
             success(data){
-                resolove(data);
+                resolve(data);
             }
         });
     }).then((config)=>{
