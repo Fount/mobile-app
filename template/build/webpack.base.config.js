@@ -14,7 +14,7 @@ module.exports={
     },
     output:{
         path:BUILD_PATH,
-        filename:'[name].[hash:6].js'
+        filename:'[name].js'
     },
     module:{
         loaders:[
@@ -31,7 +31,7 @@ module.exports={
                 loader:'url',
                 query:{
                     limit:1000,
-                    name:'images/[name].[hash:6].[ext]'
+                    name:'images/[name].[ext]'
                 }
             },{
                 test:/\.js$/,
@@ -44,7 +44,7 @@ module.exports={
         ]
     },
     plugins:[
-        new ExtractTextPlugin("[name].[hash:6].css"),
+        new ExtractTextPlugin("[name].css"),
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",

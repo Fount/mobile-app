@@ -17,7 +17,9 @@ export default {
         options=Object.assign({
             fastclick:true,
             adaption:true,
-            width:320
+            width:320,
+            baseFont:14{{#if_eq weixinShare true}},
+            shareApi:''{{/if_eq}}
         },options);
 
         //添加fastclick
@@ -27,7 +29,7 @@ export default {
         if(options.adaption){
             var winH=window.document.documentElement.clientHeight,
                 winW=window.document.documentElement.clientWidth;
-            var baseSize=14/options.width*(winH<winW?winH:winW);
+            var baseSize=options.baseFont/options.width*(winH<winW?winH:winW);
             document.getElementsByTagName('html')[0].style.fontSize=`${baseSize}px`;
             Vue.prototype.$baseSize=baseSize;
         }
@@ -41,7 +43,7 @@ export default {
 
         {{#if_eq weixinShare true}}
         //加载分享
-        getTicket();
+        getTicket(options.shareApi);
         Vue.prototype.$share=weixinShare;
         {{/if_eq}}
         //加载弹框组件

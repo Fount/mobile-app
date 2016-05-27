@@ -28,7 +28,7 @@ var routeList={
             page_title:'详情页'
         }
     },
-    'onelist':{
+    '/onelist':{
         name:'onelist',
         text:'列表一',
         component:OneListView,
@@ -36,7 +36,7 @@ var routeList={
             page_title:'列表一'
         }
     },
-    'twolist':{
+    '/twolist':{
         name:'twolist',
         text:'列表二',
         component:TwoListView,
