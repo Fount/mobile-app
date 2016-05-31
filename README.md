@@ -11,7 +11,7 @@ $ npm install -g vue-cli
 $ vue init zhipenglin/mobile-app my-project
 $ cd my-project
 $ npm install
-$ npm run dev
+$ npm run start
 ```
 
 ### What's Included
