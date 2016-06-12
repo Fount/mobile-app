@@ -1,31 +1,25 @@
-# vue-webpack-simple-boilerplate
+# 用来初始化一个空的移动web应用的脚手架
 
-> A simple Webpack setup for `vue-loader` for quick prototyping.
+> 感谢vue,webpack的作者
+> 该项目主要供`代代传承传媒有限公司`的项目组开发移动端活动使用
+> 欢迎大家来中国最大的VUE群:364912432,和大家交流
+> 本项目用到的一些后端（图片上传和微信分享SDK获取）接口默认来自于内部的项目接口，暂不对外公开
 
-### Usage
+### 用法
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+1.  请确保已安装node环境，如果没有安装，请去 [nodejs官网](https://nodejs.org)下载安装
+2.  执行以下代码
 
 ``` bash
-$ npm install -g vue-cli
+$ npm install -g vue-cli (第一次使用时执行，只用安装一次)
 $ vue init zhipenglin/mobile-app my-project
 $ cd my-project
 $ npm install
 $ npm run start
 ```
 
-### What's Included
+### 文档
 
-- `npm run dev`: Webpack + `vue-loader` with proper config for source maps & hot-reload.
+## 1.组件
 
-- `npm run build`: Production build with HTML/CSS/JS minification.
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```
+^ 图片上传
