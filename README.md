@@ -8,10 +8,10 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack-simple my-project
+$ vue init zhipenglin/mobile-app my-project
 $ cd my-project
 $ npm install
-$ npm run dev
+$ npm run start
 ```
 
 ### What's Included
