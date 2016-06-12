@@ -16,6 +16,9 @@ module.exports={
         path:BUILD_PATH,
         filename:'[name].js'
     },
+    resolve: {
+        extensions: ['', '.js', '.vue']
+    },
     module:{
         loaders:[
             {
@@ -36,12 +39,13 @@ module.exports={
             },{
                 test:/\.js$/,
                 loader:'babel',
-                include:APP_PATH,
-                query:{
-                    presets:['es2015']
-                }
+                include:APP_PATH
             }
         ]
+    },
+    babel: {
+        presets: ['es2015'],
+        plugins: ['transform-runtime']
     },
     plugins:[
         new ExtractTextPlugin("[name].css"),
