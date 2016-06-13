@@ -6,7 +6,7 @@
                     <img :src="item.img|imgcut">
                 </div>
                 <div class="cover">
-                    {{list[current]&&list[current].title}}
+                    \{{list[current]&&list[current].title}}
                     <div class="indicator">
                         <i v-for="item in list" :class="{'on':$index==current}"></i>
                     </div>
@@ -18,7 +18,7 @@
                 <img :src="item.img|imgcut">
             </div>
             <div class="cover">
-                {{list[current]&&list[current].title}}
+                \{{list[current]&&list[current].title}}
                 <div class="indicator">
                     <i v-for="item in list" :class="{'on':$index==current}"></i>
                 </div>
