@@ -4,7 +4,7 @@
         <div class="item">
             <upload :value.sync="uploadValue" :max=20></upload>
             <h4>上传组件取得的值</h4>
-            <p v-for="img in uploadValue">{{img}}</p>
+            <p v-for="img in uploadValue">\{{img}}</p>
         </div>
     </div>
 </template>
