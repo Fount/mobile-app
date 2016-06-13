@@ -35,6 +35,7 @@ var routMap=(()=>{
     var route={};
     for(let key in routeList){
         let routeItem=routeList[key];
+        routeItem.component.template=`<div class="page ${routeItem.name}"><template v-if="!$loadingRouteData">${routeItem.component.template}</template><div class="loading" v-if="$loadingRouteData"></div></div>`;
         route[key]={
             name:routeItem.name,
             component:routeItem.component
