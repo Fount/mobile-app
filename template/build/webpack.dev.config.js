@@ -11,9 +11,12 @@ module.exports=merge(baseConfig,{
     },
     devtool:'eval-source-map',
     devServer: {
-        hot: true,
-        inline: true,
         proxy: {
+            '/common/upload':{
+                target: 'http://m.91ddcc.com/',
+                secure: false,
+                changeOrigin: true
+            },
             '/activitymany/*': {
                 target: 'http://m.91ddcc.com/',
                 /*rewrite: function(req) {

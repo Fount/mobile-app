@@ -36,8 +36,8 @@
         methods:{
             selected(event){
                 var files=event.target.files;
-                if(this.filesIndex.length+files.length>9){
-                    this.$alert.error('上传图片不能超过9张');
+                if(this.filesIndex.length+files.length>this.max){
+                    this.$alert.error(`上传图片不能超过${this.max}张`);
                     return;
                 }
                 if(files.length > 0) {

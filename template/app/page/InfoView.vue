@@ -1,7 +1,5 @@
 <template>
-    <div class="page index">
-        <h2 class="title">mobile app模版详情页</h2>
-    </div>
+    <h2 class="title">mobile app模版详情页</h2>
 </template>
 <script type="text/ecmascript-6">
     import '../less/index.less'

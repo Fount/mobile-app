@@ -30,10 +30,10 @@ var routeList={
     },
     '/onelist':{
         name:'onelist',
-        text:'列表一',
+        text:'组件',
         component:OneListView,
         pageData:{
-            page_title:'列表一'
+            page_title:'组件'
         }
     },
     '/twolist':{

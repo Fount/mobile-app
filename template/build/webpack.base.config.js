@@ -30,10 +30,10 @@ module.exports={
                 loader: ExtractTextPlugin.extract("style-loader", "css!autoprefixer!less"),
                 include:APP_PATH
             },{
-                test:/\.(png|jpg|svg)$/,
+                test:/\.(png|jpg|svg|gif)$/,
                 loader:'url',
                 query:{
-                    limit:1000,
+                    limit:50000,
                     name:'images/[name].[ext]'
                 }
             },{

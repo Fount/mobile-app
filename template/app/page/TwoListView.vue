@@ -1,12 +1,10 @@
 <template>
-    <div class="page index">
-        <h2 class="title">mobile app模版列表页二</h2>
-        <p>
-            <a @click="error">错误框组件</a>
-            <a @click="success">正确弹框</a>
-            <a @click="confirm">确认弹框</a>
-        </p>
-    </div>
+    <h2 class="title">mobile app模版列表页二</h2>
+    <p>
+        <a @click="error">错误框组件</a>
+        <a @click="success">正确弹框</a>
+        <a @click="confirm">确认弹框</a>
+    </p>
 </template>
 <script type="text/ecmascript-6">
     import '../less/index.less'

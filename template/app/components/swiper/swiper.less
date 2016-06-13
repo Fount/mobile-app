@@ -1,0 +1,44 @@
+@import "../../less/common/color";
+.component-swiper{
+  height: 14rem;
+  overflow: hidden;
+  position: relative;
+  .item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img{
+      display: block;
+      width: 100%;
+      min-height: 100%;
+    }
+  }
+  .cover{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+    .indicator{
+      float: right;
+      margin-right: 15px;
+      i{
+        display: inline-block;
+        vertical-align: middle;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #d0cdd1;
+        margin-left: 6px;
+        &.on{
+          background-color:@uColor;
+        }
+      }
+    }
+  }
+}
